@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Enlaces y recursos para aprender Docker y nginx.">
+	<title>Mis enlaces | Aprendiendo Docker</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: Georgia, "Times New Roman", serif;
+			color: #20352f;
+			background: #f5f5ef;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			background: radial-gradient(circle at 50% 0%, #dce9df 0, #f5f5ef 55%);
+		}
+
+		main {
+			width: min(100% - 40px, 480px);
+			margin: 0 auto;
+			padding: clamp(48px, 10vh, 100px) 0 64px;
+			text-align: center;
+		}
+
+		.avatar {
+			display: block;
+			width: 96px;
+			height: 96px;
+			margin: 0 auto 22px;
+			border: 4px solid #fff;
+			border-radius: 50%;
+			background: #b8d7c5;
+			object-fit: cover;
+			box-shadow: 0 8px 25px #20352f25;
+		}
+
+		h1 { margin: 0; font-size: clamp(2rem, 8vw, 2.8rem); }
+
+		.intro {
+			margin: 12px auto 34px;
+			color: #4b6057;
+			font-family: Verdana, sans-serif;
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+
+		.links { display: grid; gap: 13px; }
+
+		.links a {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-height: 64px;
+			padding: 14px 20px;
+			border: 1px solid #b5c9bb;
+			border-radius: 6px;
+			background: #fff;
+			color: #20352f;
+			font-family: Verdana, sans-serif;
+			font-size: 0.95rem;
+			font-weight: bold;
+			text-align: left;
+			text-decoration: none;
+			transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+		}
+
+		.links a:hover {
+			background: #e5f2e8;
+			box-shadow: 0 5px 15px #20352f17;
+			transform: translateY(-2px);
+		}
+
+		.links a:focus-visible { outline: 3px solid #146854; outline-offset: 3px; }
+		.arrow { margin-left: 16px; color: #23725e; font-size: 1.3rem; }
+
+		footer {
+			margin-top: 38px;
+			color: #596c61;
+			font-family: Verdana, sans-serif;
+			font-size: 0.8rem;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.links a { transition: none; }
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=192&amp;h=192&amp;fit=crop" alt="Foto de perfil" width="96" height="96">
+		<h1>Aprendiendo Docker</h1>
+		<p class="intro">Un espacio para compartir recursos sobre contenedores y desarrollo web.</p>
+
+		<nav class="links" aria-label="Enlaces de interés">
+			<a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreferrer">Primeros pasos con Docker <span class="arrow" aria-hidden="true">↗</span></a>
+			<a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">Explorar Docker Hub <span class="arrow" aria-hidden="true">↗</span></a>
+			<a href="https://nginx.org/en/docs/" target="_blank" rel="noopener noreferrer">Documentación de nginx <span class="arrow" aria-hidden="true">↗</span></a>
+			<a href="https://github.com/docker" target="_blank" rel="noopener noreferrer">Docker en GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+		</nav>
+
+		<footer>Hecho para practicar con Docker y nginx</footer>
+	</main>
+</body>
+</html>
